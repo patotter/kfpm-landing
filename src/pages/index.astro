@@ -1,0 +1,44 @@
+---
+import Page from '../layouts/Page.astro';
+
+title: "KFPM Europe"
+description: "Southeast Asia products distribution"
+---
+
+<Page title="KFPM Europe" description="Southeast Asia products distribution">
+	<main>
+		<h1 class="logo">KFPM<span class="logo__small">Europe</span></h1>
+
+		<a href="mailto:kfpm.europe@gmail.com?subject=KFPM Web contact">Contact Us</a>
+	</main>
+
+	<style lang="scss">
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.logo {
+			display: inline-block;
+			text-align: center;
+			line-height: 1;
+			padding: .5em .2em;
+			font-size: 4rem;
+			border: 2px solid;
+			border-radius: .2em;
+			background-color: rgba(255, 255, 255, .4);
+			box-shadow: 0 0 .75em #ccc;
+
+			&__small {
+				display: block;
+				text-transform: uppercase;
+				font-weight: 200;
+				font-size: .2em;
+				letter-spacing: .8em;
+				padding-inline-start: .8em;
+			}
+		}
+	</style>
+</Page>

@@ -1,0 +1,27 @@
+{
+  "name": "kfpm-landing",
+  "version": "0.0.0",
+  "description": "KFPM Europe Landing Page",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.72"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patotter/kfpm-landing.git"
+  },
+  "author": "Fernando Romero",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/patotter/kfpm-landing/issues"
+  },
+  "homepage": "https://github.com/patotter/kfpm-landing#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

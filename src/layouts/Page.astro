@@ -1,0 +1,68 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title } = Astro.props as Props;
+const { description } = Astro.props as Props;
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap" rel="stylesheet">
+
+  <style is:global lang="scss">
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Nunito', Arial, Helvetica, sans-serif;
+      background-color: #eee;
+    }
+
+    a {
+      color: #000;
+
+      &:visited {
+        color: #666;
+      }
+
+      &:active {
+        color: #333;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <slot />
+
+  <!-- <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+    <script src="js/app.js"></script> -->
+</body>
+
+</html>
